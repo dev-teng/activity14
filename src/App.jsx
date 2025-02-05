@@ -9,9 +9,15 @@ import 'bootstrap/dist/js/bootstrap.js';
 function App() {
 
   return (
-    <>
-   
-    </>
+    <BrowserRouter>
+      <Switch>
+        <Route>
+          <Route index element={Home}/>
+          <Route />
+          <Route />
+        </Route> 
+      </Switch>
+    </BrowserRouter>
   )
 }
 
